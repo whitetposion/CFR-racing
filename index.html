@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CFR - Home</title>
 
     <!-- Custom Links -->
@@ -35,7 +35,15 @@
                 <a href="/index.html"><img src="/assets/img/logo.png" alt="f1-logo"> </a>
             </div>
             <div class="f1-navbar">
-                <ul>
+                <button class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20"
+                        height="15" viewBox="0 0 50 50">
+                        <path
+                            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+                        </path>
+                    </svg>
+                </button>
+                <ul class="nav-links responsive-nav" id="nav-links">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#Cars">Cars</a></li>
@@ -44,12 +52,12 @@
                     <li><a href="#Support">Support Us</a></li>
                 </ul>
             </div>
-            <div class="f1-btn">
+            <div class="f1-btn responsive-nav" id="contact-btn">
                 <a href="">Contact</a>
             </div>
         </div>
     </section>
-
+`
     <section id="bg">
 
 
@@ -70,7 +78,7 @@
 
     </section>
 
-    <section id="modal">
+    <section id="modal" >
 
         <div class="f1-heading2">
             <h1 data-text="3d Model">3d Model</h1>
@@ -88,7 +96,7 @@
             <div class="car-part5 plus-icon front-wing" data-tooltip="Front Wing"><i class="fas fa-plus"></i></div>
 
             <!-- Info sections -->
-             <div class="data">
+            <div class="data">
                 <h2>Tires Information</h2>
                 <p>Details about the tires...</p>
             </div>
@@ -156,29 +164,27 @@
             <p>Yearly Car's Models</p>
         </div>
 
-        <div class="f1-years">
-            <div class="f1-slide f1-slide-1">
+        <div class="f1-years" id="whole-car-img">
+            <div class="f1-slide f1-slide-1" id="car-img"  >
                 <img src="/assets/img/Our Cars/Cars/2023/1.jpg" alt="">
                 <div class="f1-btn4">
-
                     <a href="/assets/Alternate Path/Year2023.html" target="_blank">Year 2023</a>
                 </div>
             </div>
-            <div class="f1-slide f1-slide-2">
+            <div class="f1-slide f1-slide-2" id="car-img" >
                 <img src="/assets/img/Our Cars/Cars/2021/5.PNG" alt="">
                 <div class="f1-btn4">
-
                     <a href="/assets/Alternate Path/Year2021.html" target="_blank">Year 2021</a>
                 </div>
             </div>
-            <div class="f1-slide f1-slide-3">
+            <div class="f1-slide f1-slide-3" id="car-img" >
                 <img src="/assets/img/Our Cars/Cars/2020/1.jpg" alt="">
                 <div class="f1-btn4">
 
                     <a href="/assets/Alternate Path/Year2020.html" target="_blank">Year 2020</a>
                 </div>
             </div>
-            <div class="f1-slide f1-slide-3">
+            <div class="f1-slide f1-slide-3" id="car-img" >
                 <img src="/assets/img/Our Cars/Cars/2019/1.jpeg" alt="">
 
                 <div class="f1-btn4">
@@ -186,7 +192,7 @@
                     <a href="/assets/Alternate Path/Year2019.html" target="_blank">Year 2019</a>
                 </div>
             </div>
-            <div class="f1-slide f1-slide-3">
+            <div class="f1-slide f1-slide-3" id="car-img" >
                 <img src="/assets/img/Our Cars/Cars/2018/2.jpeg" alt="">
 
                 <div class="f1-btn4">
@@ -194,7 +200,7 @@
                     <a href="/assets/Alternate Path/Year2018.html" target="_blank">Year 2018</a>
                 </div>
             </div>
-            <div class="f1-slide f1-slide-3">
+            <div class="f1-slide f1-slide-3" id="car-img" >
                 <img src="/assets/img/Our Cars/Cars/2017/1.jpeg" alt="">
 
                 <div class="f1-btn4">
@@ -221,7 +227,7 @@
 
 
 
-        <div class="home-container">
+        <div class="home-container" id="core-crew">
             <div class="profile-card">
                 <div class="img">
                     <img src="/assets/img/Team/Core Team/1.png">
@@ -272,13 +278,13 @@
 
         <!-- Chassis Team -->
 
-        <div class="main3">
+        <div class="main3" id="chsssis-heading" >
             <h3 class="head3">Chassis Team</h3>
         </div>
 
 
 
-        <div class="home-container">
+        <div class="home-container" id="core-crew">
             <div class="profile-card">
                 <div class="img">
                     <img src="/assets/img/Team/Chassis/Chassis/1.png">
@@ -369,7 +375,7 @@
 
 
 
-        <div class="home-container">
+        <div class="home-container" id="core-crew">
             <div class="profile-card">
                 <div class="img">
                     <img src="/assets/img/Team/Electronics/Electronics/1.png">
@@ -457,7 +463,7 @@
 
 
 
-        <div class="home-container">
+        <div class="home-container" id="core-crew">
             <div class="profile-card">
                 <div class="img">
                     <img src="/assets/img/Team/E-powertrain/1.png">
@@ -609,7 +615,7 @@
 
 
 
-        <div class="home-container">
+        <div class="home-container" id="core-crew">
             <div class="profile-card">
                 <div class="img">
                     <img src="/assets/img/Team/Vehicle Dynamics/Vehicle Dynamics/1.png">
@@ -743,7 +749,7 @@
     <section id="Sponsers">
 
 
-        <div class="f1-heading">
+        <div class="f1-heading" >
 
             <h1>Sponsors</h1>
 
@@ -780,10 +786,10 @@
 
         </div>
 
-        <div class="main">
+        <div class="main" id="brands">
             <h3 class="head">Brand Sponsors</h3>
 
-            <div class="sponser-container">
+            <div class="sponser-container" id="brand-sponsors">
 
 
                 <div class="sponser1">
@@ -1190,7 +1196,7 @@
 
     <section id="footer">
         <footer>
-            <div class="f1-container">
+            <div class="f1-container" id="footer-details">
                 <div class="f1sec aboutus">
                     <h2>Address</h2>
                     <p>Fr. Agnel Ashram,</p>
